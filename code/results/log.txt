@@ -1,0 +1,4 @@
+2024-10-15 10:37:09 - valence lexicon length: 19970
+2024-10-15 10:37:09 - Number of rows: 60
+2024-10-15 10:37:09 - dominance lexicon length: 19970
+2024-10-15 10:37:09 - Number of rows: 60
