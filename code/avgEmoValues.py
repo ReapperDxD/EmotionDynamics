@@ -14,10 +14,10 @@ import logging
 tqdm.pandas()
 
 parser = ArgumentParser()
-parser.add_argument('--dataPath', help='path to CSV data file with texts')
-parser.add_argument('--lexPath', help='path to lexicon. CSV with columns "word" plus emotion columns')
-parser.add_argument('--lexNames', nargs="*", type=str, help='Names of the lexicons/column names in the lexicon CSV')
-parser.add_argument('--savePath', help='path to save folder')
+parser.add_argument('C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\sample_data\sample_input.csv', help='path to CSV data file with texts')
+parser.add_argument('C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\uedLib\lexicons\NRC-VAD-Lexicon.csv', help='path to lexicon. CSV with columns "word" plus emotion columns')
+parser.add_argument('C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\uedLib\lexicons\stopwords.txt', nargs="*", type=str, help='Names of the lexicons/column names in the lexicon CSV')
+parser.add_argument('C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\results', help='path to save folder')
 
 def read_lexicon(path, LEXNAMES):
     df = pd.read_csv(path)
