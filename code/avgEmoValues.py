@@ -45,12 +45,15 @@ def get_vals(twt, lexdf):
     at = [w for w in tt if w.isalpha()]
 
     pw = [x for x in tt if x in lexdf.index]
-    pv = [lexdf.loc[w]['val'] for w in pw]
+    # mudei para que seja uma verificação para assegurar que pw (palavras que estão no lexicon) não esteja vazio antes de prosseguir com os cálculos
+    pv = [lexdf.loc[w]['val'] for w in pw if w in lexdf.index]
+    #pv = [lexdf.loc[w]['val'] for w in pw] -> era o que tava dantes
 
     numTokens = len(at)
     numLexTokens = len(pw)
     
-    avgLexVal = np.mean(pv)  #nan for 0 tokens
+    # alterei esta linha para aceitar nan
+    avgLexVal = np.mean(pv) if pv else float('nan')  #nan for 0 tokens
 
     return [numTokens, numLexTokens, avgLexVal]
 
