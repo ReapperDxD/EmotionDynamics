@@ -14,7 +14,6 @@ import logging
 tqdm.pandas()
 
 
-
 parser = ArgumentParser()
 parser.add_argument('--dataPath', default=r'EmotionDynamics\code\sample_data\sample_input.csv', help='Path to CSV data file with texts')
 parser.add_argument('--lexPath', default=r'EmotionDynamics\code\uedLib\lexicons\NRC-VAD-Lexicon.csv', help='Path to lexicon CSV with columns "word" plus emotion columns')
