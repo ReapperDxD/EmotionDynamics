@@ -13,11 +13,13 @@ import logging
 
 tqdm.pandas()
 
+
+
 parser = ArgumentParser()
-parser.add_argument('--dataPath', default=r'C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\sample_data\sample_input.csv', help='Path to CSV data file with texts')
-parser.add_argument('--lexPath', default=r'C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\uedLib\lexicons\NRC-VAD-Lexicon.csv', help='Path to lexicon CSV with columns "word" plus emotion columns')
+parser.add_argument('--dataPath', default=r'EmotionDynamics\code\sample_data\sample_input.csv', help='Path to CSV data file with texts')
+parser.add_argument('--lexPath', default=r'EmotionDynamics\code\uedLib\lexicons\NRC-VAD-Lexicon.csv', help='Path to lexicon CSV with columns "word" plus emotion columns')
 parser.add_argument('--lexNames', nargs='*', type=str, default=['valence', 'dominance'], help='Names of the lexicons/column names in the lexicon CSV')
-parser.add_argument('--savePath', default=r'C:\Users\Utilizador\Desktop\Mestrado\IA\EmotionDynamics\code\results', help='Path to save folder')
+parser.add_argument('--savePath', default=r'EmotionDynamics\code\resultss', help='Path to save folder')
 
 def read_lexicon(path, LEXNAMES):
     df = pd.read_csv(path)
