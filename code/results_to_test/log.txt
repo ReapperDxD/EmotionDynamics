@@ -1,0 +1,6 @@
+2024-11-18 16:21:20 - valence lexicon length: 19970
+2024-11-18 16:21:20 - Number of rows: 60
+2024-11-18 16:21:20 - arousal lexicon length: 19970
+2024-11-18 16:21:20 - Number of rows: 60
+2024-11-18 16:21:20 - dominance lexicon length: 19970
+2024-11-18 16:21:20 - Number of rows: 60

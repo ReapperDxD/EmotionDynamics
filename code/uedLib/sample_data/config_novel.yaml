@@ -3,6 +3,7 @@ data_path: sample_data/sample_input.csv
 disp_length_min: 1
 emoCols:
 - valence
+- arousal
 filter: true
 idCol: novel
 level: 0.68

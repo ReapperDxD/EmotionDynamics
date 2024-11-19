@@ -1,5 +1,5 @@
 import numpy as np
-from numpy.lib.npyio import save
+from numpy import save
 import pandas as pd
 import nltk
 import os, re, sys, json, csv, string, os, math

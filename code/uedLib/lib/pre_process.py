@@ -1,6 +1,6 @@
 import string, os, re, sys, json, csv
 import numpy as np
-from numpy.lib.npyio import save
+from numpy import save
 import pandas as pd
 from collections import Counter, defaultdict
 
